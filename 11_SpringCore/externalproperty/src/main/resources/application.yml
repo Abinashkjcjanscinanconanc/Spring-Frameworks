@@ -1,0 +1,9 @@
+student:
+  name: smruti
+  roll: 101
+  fee: 54321.90
+
+employee: 
+  id: 100
+  name: bunny
+  salary: 1000.89

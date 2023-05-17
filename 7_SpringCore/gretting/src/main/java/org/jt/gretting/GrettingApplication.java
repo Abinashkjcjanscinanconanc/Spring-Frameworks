@@ -13,19 +13,17 @@ public class GrettingApplication {
 	public static void main(String[] args) {
 		ConfigurableApplicationContext beans = SpringApplication.run(GrettingApplication.class, args);
 
+		var hiApp = beans.getBean(HiApp.class);
+		hiApp.hi();
 
 		var gretting = beans.getBean(Gretting.class);
 		gretting.greet();
-
-		var hiApp = beans.getBean(HiApp.class);
-		hiApp.hi();
 
 		var student = beans.getBean(Student.class);
 		System.out.println(student.getName() + "\t" + student.getRoll());
 
 		var employee = beans.getBean(Employee.class);
-		System.out.println(employee.getName()
-		);
+		System.out.println(employee.getName());
 	}
 
 }
