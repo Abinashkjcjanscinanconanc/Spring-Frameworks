@@ -11,7 +11,7 @@ import org.springframework.context.annotation.ImportResource;
 public class GrettingApplication {
 
 	public static void main(String[] args) {
-		ConfigurableApplicationContext beans = SpringApplication.run(GrettingApplication.class, args);
+		var beans = SpringApplication.run(GrettingApplication.class, args);
 
 		var hiApp = beans.getBean(HiApp.class);
 		hiApp.hi();
